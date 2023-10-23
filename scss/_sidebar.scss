@@ -1,0 +1,171 @@
+.sidebar {
+    border-radius: 1px;
+    background: $menu-sidebar;
+    min-height: 100vh;
+    width: 20.8rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 21;
+    padding-left: 3.9rem;
+    transition: width .3s;
+
+    .logo {
+        width: 3.2rem;
+        height: 4.4rem;
+        margin-top: 2.1rem;
+        margin-bottom: 7.1rem;
+    }
+
+    nav {
+        ul {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6.7rem;
+            margin-bottom: 5rem;
+
+            li {
+                max-width: 19.2rem;
+                width: 100%;
+
+                &.selected {
+                    position: relative;
+
+                    a {
+                        svg {
+                            path {
+                                stroke: $menu-sidebar;
+                            }
+                        }
+
+                        span {
+                            color: $menu-sidebar;
+                        }
+                    }
+
+                    &:after {
+                        content: "";
+                        background-image: url('../img/big-wave.png');
+                        display: block;
+                        width: 20.8rem;
+                        height: 9.4rem;
+                        top: -2.9rem;
+                        position: absolute;
+                        z-index: -1;
+                        left: -3.4rem;
+
+                    }
+
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    width: 100%;
+                    transition: svg .3s;
+
+                    span {
+                        color: #FFF;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .toggle-icon {
+        cursor: pointer;
+        transition: transform .3s;
+
+        svg {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+    &.collapse {
+        width: 8.8rem;
+
+        nav {
+            ul {
+                margin-bottom: 15rem;
+
+                li {
+                    a {
+                        span {
+                            display: none;
+                        }
+                    }
+
+
+
+                    &:after {
+                        content: "";
+                        background-image: url('../img/mini-wave.png');
+                        background-repeat: no-repeat;
+                        width: 8.8rem;
+                        top: -3.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-height: 1065px) {
+        nav {
+            ul {
+                gap: 5.7rem;
+            }
+        }
+
+        .logo {
+
+            margin-bottom: 4.1rem;
+        }
+        .toggle-icon{
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @include responsive(1024px){
+        display: none;
+    }
+    
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o track (trilho) da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Cor de fundo do trilho */
+}
+
+/* Estilizando o thumb (cursor) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: $menu-sidebar; /* Cor do cursor */
+}
+
+/* Estilizando a borda do thumb (cursor) quando hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do cursor ao passar o mouse */
+}

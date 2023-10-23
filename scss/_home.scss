@@ -1,0 +1,301 @@
+.main-content {
+    flex-grow: 1;
+    margin-left: 20.8rem;
+
+    .container {
+        padding: 4.1rem 1.5rem 0;
+        display: flex;
+        gap: 4.3rem;
+
+        .s-left {
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+                margin-bottom: 2rem;
+                margin-left: 0.3rem;
+            }
+
+            .main-banner {
+                margin-bottom: 4.6rem;
+            }
+        }
+
+        .s-right {
+            border-radius: 10px;
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                margin-bottom: 1.9rem;
+
+                .wrapper-title {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                }
+
+                a {
+                    color: #37A033;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 2.4rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .all-notices {
+                background: $aside-background;
+                padding-right: 2.5rem;
+                padding-left: 2.4rem;
+                padding-top: 2.8rem;
+                padding-bottom: 1.5rem;
+
+                .calendar {
+                    margin-bottom: 3rem;
+                }
+
+                .wrapper-notice {
+                    &:not(:last-child) {
+                        margin-bottom: 3.1rem;
+                    }
+
+                    h3 {
+                        margin-bottom: 1.6rem;
+                    }
+
+                    .notice {
+                        border-radius: 10px;
+                        background: #FFF;
+                        display: flex;
+                        align-items: center;
+                        max-width: 37rem;
+                        width: 100%;
+                        height: 7.9rem;
+                        margin-bottom: 1.5rem;
+                        padding: 1.9rem 1.9rem 2rem 1.4rem;
+                        gap: 1.245rem;
+
+                        .tool-description {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            align-items: center;
+
+                            .area-text {
+                                h4 {
+                                    line-height: normal;
+                                }
+
+                                span {
+                                    color: #A6A6A6;
+                                    font-size: 1.4rem;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    &.collapse {
+        margin-left: 8.8rem;
+    }
+
+    @include responsive(1024px) {
+        margin-left: 0;
+
+        &.collapse {
+            margin-left: 0;
+        }
+    }
+
+    @include responsive(1500px) {
+        .container {
+            .s-left {
+                width: 60%;
+            }
+        }
+    }
+
+    @include responsive(1376px) {
+        .container {
+            gap: 2.3rem;
+
+            .s-left {
+                .main-banner {
+                    .text-area {
+                        width: 58%;
+                    }
+                }
+            }
+
+            .s-right {
+                width: 37%;
+            }
+        }
+    }
+
+    @include responsive(1246px) {
+        .container {
+            flex-direction: column;
+            gap: 5.3rem;
+
+            .s-left {
+                width: 100%;
+
+                .table-tools {
+                    max-width: none;
+                }
+
+                .main-banner {
+                    width: auto;
+
+                    .text-area {
+                        width: 100%;
+                    }
+                }
+
+                .title {
+                    justify-content: center;
+                }
+            }
+
+            .s-right {
+                width: 100%;
+
+                .all-notices {
+                    display: flex;
+                    flex-direction: column;
+
+                    .wrapper-notice {
+                        h3 {
+                            margin-top: 2rem;
+                            text-align: center;
+                        }
+
+                        .notice {
+                            max-width: none;
+                        }
+                    }
+
+                    .calendar {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(768px) {
+        .container {
+            .s-right {
+                .title {
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .s-left {
+                .main-banner {
+                    .image-area {
+                        top: 0;
+                        width: 22.5rem;
+                    }
+
+                    .text-area {
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(530px) {
+        .container {
+            .s-left {
+                .main-banner {
+                    width: auto;
+                    height: auto;
+                    flex-direction: column;
+
+                    .image-area {
+                        position: relative;
+                    }
+
+                    .text-area {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0;
+
+                        p {
+                            text-align: center;
+                        }
+
+                        h1 {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .table-tools {
+                    ul {
+                        li {
+                            .tool-description {
+                                .area-text {
+                                    max-width: 28rem;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(425px) {
+        .container {
+            .s-left {
+                .table-tools {
+                    ul {
+                        li {
+                            .tool-description {
+                                .area-text {
+                                    width: 88%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(350px) {
+        .container {
+            .s-right {
+                .all-notices {
+                    .calendar {
+                        .weekend-wrapper {
+                            gap: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

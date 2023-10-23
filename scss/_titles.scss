@@ -1,0 +1,45 @@
+h1 {
+    color: $title-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    @include responsive(768px){
+        font-size: 2rem;
+    }
+}
+
+h2,
+h3 {
+    color: $title-color;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    @include responsive(768px){
+        font-size: 1.6rem;
+    }
+}
+
+h4 {
+    color: $title-color;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 28.023%;
+    @include responsive(768px){
+        font-size: 1.2rem;
+    }
+}
+
+
+p {
+    color: $title-color;
+    font-size: 1.4rem;
+    font-weight: 400;
+    @include responsive(768px){
+        font-size: 1.2rem;
+    }
+}
+span{
+    @include responsive(768px){
+        font-size: 1.2rem !important;
+    }
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Área do Aluno</title>
+</head>
+
+<body>
+    <header class="collapse">
+        <div class="container">
+            <div class="user-greetings">
+                <img src="./img/green-circle.png" alt="círculo verde">
+                <h2>Boa tarde, Fulano de Tal</h2>
+            </div>
+            <nav class="nav-tools">
+                <div class="btns-area">
+                    <button>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 7">
+                                <circle id="Ellipse 2" cx="20" cy="20" r="19.5" stroke="#D9D9D9" />
+                                <path id="Icon"
+                                    d="M28 28L23.8917 23.8917M26.1111 18.5556C26.1111 22.7284 22.7284 26.1111 18.5556 26.1111C14.3827 26.1111 11 22.7284 11 18.5556C11 14.3827 14.3827 11 18.5556 11C22.7284 11 26.1111 14.3827 26.1111 18.5556Z"
+                                    stroke="#2F9E41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 10">
+                                <circle id="Ellipse 2" cx="20" cy="20" r="19.5" stroke="#D9D9D9" />
+                                <path id="Icon"
+                                    d="M19.5 11V12.7273M19.5 28.2727V30M12.7809 13.7809L14.0073 15.0073M24.9927 25.9927L26.2191 27.2191M10 20.5H11.7273M27.2727 20.5H29M12.7809 27.2191L14.0073 25.9927M24.9927 15.0073L26.2191 13.7809M23.8182 20.5C23.8182 22.8849 21.8849 24.8182 19.5 24.8182C17.1151 24.8182 15.1818 22.8849 15.1818 20.5C15.1818 18.1151 17.1151 16.1818 19.5 16.1818C21.8849 16.1818 23.8182 18.1151 23.8182 20.5Z"
+                                    stroke="#2F9E41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 60">
+                                <g id="Group 11">
+                                    <circle id="Ellipse 2" cx="20" cy="20" r="19.5" stroke="#D9D9D9" />
+                                </g>
+                                <path id="Vector"
+                                    d="M17.8594 19.1562C17.8594 19.7603 17.3452 20.25 16.7109 20.25C16.0767 20.25 15.5625 19.7603 15.5625 19.1562C15.5625 17.4331 17.0345 16.0312 18.8437 16.0312C20.653 16.0312 22.125 17.4331 22.125 19.1562C22.125 19.7603 21.6108 20.25 20.9765 20.25C20.3423 20.25 19.8281 19.7603 19.8281 19.1562C19.8281 18.6393 19.3865 18.2187 18.8437 18.2187C18.301 18.2187 17.8594 18.6393 17.8594 19.1562ZM18.8437 12.2812C14.8633 12.2812 11.625 15.3653 11.625 19.1562C11.625 19.7603 12.1392 20.25 12.7734 20.25C13.4077 20.25 13.9219 19.7603 13.9219 19.1562C13.9219 16.5716 16.1298 14.4687 18.8437 14.4687C21.5577 14.4687 23.7656 16.5716 23.7656 19.1562C23.7656 22.0923 20.8531 21.9028 20.8126 24.7665L20.8125 24.7812C20.8125 25.9013 19.8557 26.8125 18.6797 26.8125C18.0454 26.8125 17.5312 27.3022 17.5312 27.9062C17.5312 28.5103 18.0454 29 18.6797 29C21.1191 29 23.1043 27.1122 23.1094 24.7901C23.1338 23.4452 26.0625 22.9057 26.0625 19.1562C26.0625 15.3653 22.8242 12.2812 18.8437 12.2812ZM29.8558 10.2421L28.6957 9.13729C28.5035 8.95424 28.1919 8.95424 27.9996 9.13729L24.4301 12.5369C24.2379 12.7199 24.2379 13.0167 24.4301 13.1998L25.5902 14.3047C25.7824 14.4877 26.094 14.4877 26.2862 14.3047L29.8558 10.9051C30.0481 10.722 30.0481 10.4252 29.8558 10.2421ZM15.9304 21.2947C15.7382 21.1117 15.4266 21.1117 15.2344 21.2947L9.14415 27.0949C8.95195 27.278 8.95195 27.5748 9.14415 27.7579L10.3043 28.8627C10.4965 29.0457 10.8081 29.0457 11.0004 28.8627L17.0906 23.0625C17.2828 22.8794 17.2828 22.5827 17.0906 22.3996L15.9304 21.2947Z"
+                                    fill="#37A033" />
+                            </g>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 8">
+                                <circle id="Ellipse 3" cx="20" cy="20" r="19.5" stroke="#D9D9D9" />
+                                <g id="Icon">
+                                    <path
+                                        d="M21.1923 26.3256C21.1923 27.2503 20.4346 28 19.5 28C18.5654 28 17.8077 27.2503 17.8077 26.3256C17.8077 25.4008 18.5654 24.6512 19.5 24.6512C20.4346 24.6512 21.1923 25.4008 21.1923 26.3256Z"
+                                        fill="#37A033" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.5 12.5116C17.8979 12.5116 16.5385 13.8435 16.5385 15.5615C16.5385 16.255 15.9702 16.8173 15.2692 16.8173C14.5683 16.8173 14 16.255 14 15.5615C14 12.5235 16.429 10 19.5 10C22.571 10 25 12.5235 25 15.5615C25 17.9575 23.4968 20.0211 21.3582 20.7972C21.1476 20.8736 20.9762 20.9906 20.8728 21.1045C20.7761 21.2111 20.7692 21.2761 20.7692 21.3023C20.7692 21.9959 20.201 22.5581 19.5 22.5581C18.799 22.5581 18.2308 21.9959 18.2308 21.3023C18.2308 19.7558 19.4889 18.8003 20.4842 18.4391C21.6206 18.0268 22.4615 16.9065 22.4615 15.5615C22.4615 13.8435 21.1021 12.5116 19.5 12.5116Z"
+                                        fill="#37A033" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 9">
+                                <circle id="Ellipse 4" cx="20" cy="20" r="19.5" stroke="#D9D9D9" />
+                                <path id="Icon"
+                                    d="M21.73 29C21.5542 29.3031 21.3018 29.5547 20.9982 29.7295C20.6946 29.9044 20.3504 29.9965 20 29.9965C19.6496 29.9965 19.3054 29.9044 19.0018 29.7295C18.6982 29.5547 18.4458 29.3031 18.27 29M26 16C26 14.4087 25.3679 12.8826 24.2426 11.7574C23.1174 10.6321 21.5913 10 20 10C18.4087 10 16.8826 10.6321 15.7574 11.7574C14.6321 12.8826 14 14.4087 14 16C14 23 11 25 11 25H29C29 25 26 23 26 16Z"
+                                    stroke="#37A033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle id="Ellipse 5" cx="34" cy="5" r="5" fill="#3498DB" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="user-profile">
+                    <img src="./img/avatar-user.png" alt="Imagem do usuário" class="user-avatar">
+                    <h2>Fulano</h2>
+                    <img src="./img/icon-arrow-down.png" alt="ícone seta para baixo">
+                </div>
+                <button class="btn-mobile" id="js-btn-menu-mobile">
+                    <img src="./img/btn-mobile.png" alt="">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu-mobile">
+        <div class="overlay js-overlay"></div>
+        <aside>
+            <img src="./img/if-logo-small.png" alt="Logo IF" class="logo">
+            <ul>
+                <li><a href="" >Início</a></li>
+                <li><a href="">Pedidos de matrícula</a></li>
+                <li><a href="">Calendário</a></li>
+                <li><a href="">Diários</a></li>
+                <li><a href="">Boletim</a></li>
+                <li><a href="">Histórico Escolar</a></li>
+                <li><a href="">Matrizes Curriculares</a></li>
+                <li><a href="">Material de Aula</a></li>
+                <li><a href="">Solicitar Documentos</a></li>
+            </ul>
+        </aside>
+    </div>    
+
+    <section class="sidebar collapse">
+        <img src="./img/if-logo-small.png" alt="Logo IF" class="logo">
+        <nav>
+            <ul>
+                <li class="selected">
+
+                    <a href="#">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M7 21V11H13V21M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z"
+                                stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Início</span>
+
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M9.05116 2.89768H2.78915C2.31464 2.89768 1.85956 3.08618 1.52403 3.42171C1.1885 3.75724 1 4.21231 1 4.68682V17.2109C1 17.6854 1.1885 18.1404 1.52403 18.476C1.85956 18.8115 2.31464 19 2.78915 19H15.3132C15.7877 19 16.2428 18.8115 16.5783 18.476C16.9138 18.1404 17.1023 17.6854 17.1023 17.2109V10.9488M15.7605 1.55582C16.1163 1.19993 16.599 1 17.1023 1C17.6056 1 18.0883 1.19993 18.4442 1.55582C18.8001 1.9117 19 2.39438 19 2.89768C19 3.40097 18.8001 3.88365 18.4442 4.23954L9.94574 12.738L6.36744 13.6326L7.26202 10.0543L15.7605 1.55582Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Pedidos de matrícula</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M14 1V4.92727M6 1V4.92727M1 8.85454H19M3 2.96364H17C18.1046 2.96364 19 3.84279 19 4.92727V18.6727C19 19.7572 18.1046 20.6364 17 20.6364H3C1.89543 20.6364 1 19.7572 1 18.6727V4.92727C1 3.84279 1.89543 2.96364 3 2.96364Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Calendário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M11 5.63635C11 4.57549 10.5786 3.55807 9.82843 2.80793C9.07828 2.05778 8.06087 1.63635 7 1.63635H1V16.6364H8C8.79565 16.6364 9.55871 16.9524 10.1213 17.515C10.6839 18.0776 11 18.8407 11 19.6364M11 5.63635V19.6364M11 5.63635C11 4.57549 11.4214 3.55807 12.1716 2.80793C12.9217 2.05778 13.9391 1.63635 15 1.63635H21V16.6364H14C13.2044 16.6364 12.4413 16.9524 11.8787 17.515C11.3161 18.0776 11 18.8407 11 19.6364"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Diários</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M11 1.63635H3C2.46957 1.63635 1.96086 1.84707 1.58579 2.22214C1.21071 2.59721 1 3.10592 1 3.63635V19.6364C1 20.1668 1.21071 20.6755 1.58579 21.0506C1.96086 21.4256 2.46957 21.6364 3 21.6364H15C15.5304 21.6364 16.0391 21.4256 16.4142 21.0506C16.7893 20.6755 17 20.1668 17 19.6364V7.63635M11 1.63635L17 7.63635M11 1.63635V7.63635H17M13 12.6364H5M13 16.6364H5M7 8.63635H5"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Boletim</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M10 1.63635H3C2.46957 1.63635 1.96086 1.84707 1.58579 2.22214C1.21071 2.59721 1 3.10592 1 3.63635V19.6364C1 20.1668 1.21071 20.6755 1.58579 21.0506C1.96086 21.4256 2.46957 21.6364 3 21.6364H15C15.5304 21.6364 16.0391 21.4256 16.4142 21.0506C16.7893 20.6755 17 20.1668 17 19.6364V8.63635M10 1.63635L17 8.63635M10 1.63635V8.63635H17"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Histórico Escolar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M1 19.1364C1 18.4733 1.26339 17.8374 1.73223 17.3686C2.20107 16.8997 2.83696 16.6364 3.5 16.6364H17M1 19.1364C1 19.7994 1.26339 20.4353 1.73223 20.9041C2.20107 21.373 2.83696 21.6364 3.5 21.6364H17V1.63635H3.5C2.83696 1.63635 2.20107 1.89974 1.73223 2.36859C1.26339 2.83743 1 3.47331 1 4.13635V19.1364Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Matrizes Curriculares</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M19 10.5836L10.49 19.0936C9.44748 20.1361 8.03349 20.7218 6.55912 20.7218C5.08475 20.7218 3.67077 20.1361 2.62823 19.0936C1.58569 18.0511 1 16.6371 1 15.1627C1 13.6883 1.58569 12.2744 2.62823 11.2318L11.1382 2.72184C11.8332 2.02681 12.7759 1.63635 13.7588 1.63635C14.7417 1.63635 15.6844 2.02681 16.3794 2.72184C17.0744 3.41686 17.4649 4.35952 17.4649 5.34243C17.4649 6.32535 17.0744 7.268 16.3794 7.96303L7.86016 16.473C7.51265 16.8205 7.04132 17.0158 6.54986 17.0158C6.0584 17.0158 5.58708 16.8205 5.23956 16.473C4.89205 16.1255 4.69682 15.6542 4.69682 15.1627C4.69682 14.6713 4.89205 14.1999 5.23956 13.8524L13.1013 5.9999"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span>Material de Aula</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Icon"
+                                d="M19.1818 6.26732V18.0855H2.81818V6.26732M9.18182 9.90368H12.8182M1 1.72186H21V6.26732H1V1.72186Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Solicitar Documentos</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="toggle-icon">
+                <svg class="maximize active" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="maximize-2">
+                        <path id="Icon"
+                            d="M16.875 3.375H23.625M23.625 3.375V10.125M23.625 3.375L15.75 11.25M10.125 23.625H3.375M3.375 23.625V16.875M3.375 23.625L11.25 15.75"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+                <svg class="minimize" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="minimize-2">
+                        <path id="Icon"
+                            d="M4.5 15.75H11.25M11.25 15.75V22.5M11.25 15.75L3.375 23.625M22.5 11.25H15.75M15.75 11.25V4.5M15.75 11.25L23.625 3.375"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+
+            </div>
+        </nav>
+    </section>
+
+    <section class="main-content collapse">
+        <div class="container">
+            <section class="s-left">
+                <div class="main-banner">
+                    <div class="text-area">
+                        <h1>Está na época de pedidos de matrículas</h1>
+                        <p>Não deixe para a última hora! Faça os pedidos de matriculas entre os
+                            dias 12 de janeiro e 14 de fevereiro.</p>
+                        <div class="link-box">
+                            <a href="">
+                                <img src="./img/icon-edit-round.svg" alt="ícone de edição" class="img-logo">
+                                <span>Pedidos de matrículas <img src="./img/icon-arrow.svg"
+                                        alt="ícone seta para direita"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-area">
+                        <img src="./img/student-animation.png" alt="Desenho de uma estudante">
+                    </div>
+                </div>
+                <div class="title">
+                    <img src="./img/icon-home.svg" alt="icone home">
+                    <h3>Página inicial</h3>
+                </div>
+                <div class="table-tools">
+                    <ul>
+                        <li>
+                            <div class="icon-tool"><img src="./img/icon-clock.svg" alt="ícone de relógio"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Horário Individual</h3>
+                                    <span>Confira aqui o horário de suas aulas neste período</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-edit.svg" alt="ícone editar"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Pedidos de Matrícula</h3>
+                                    <span>Faça sua matrícula com facilidade escolhendo sua preferência de turmas nesse
+                                        período</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-calendar.svg" alt="ícone calendário">
+                            </div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Calendário Acadêmico</h3>
+                                    <span>Todas as datas do que acontece na sua instituição, no seu curso e na sua
+                                        turma</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-book.svg" alt="ícone livro"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Diários</h3>
+                                    <span>Datas de provas, trabalhos e exercícios de cada disciplina</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-document.svg" alt="ícone Documento"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Boletim</h3>
+                                    <span>Confira suas notas e frequências</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-file.svg" alt="ícone arquivo"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Histórico Escolar</h3>
+                                    <span>Confira seu histórico durante a graduação</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-close-book.svg" alt="ícone livro"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Matrizes Curriculares</h3>
+                                    <span>Consulta a matriz curricular do seu curso</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/round-icon-clip.png" alt="ícone clip"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Material de Aula</h3>
+                                    <span>Consulte o seu material para baixar disponibilizado pelo seus
+                                        professores</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-tool"><img src="./img/icon-round-box.svg" alt="ícone box"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h3>Solicitar Documentos</h3>
+                                    <span>Consulta a matriz curricular do seu curso</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="s-right">
+                <div class="title">
+                    <div class="wrapper-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                            <path
+                                d="M16.8889 1V5.8M7.11111 1V5.8M1 10.6H23M3.44444 3.4H20.5556C21.9056 3.4 23 4.47452 23 5.8V22.6C23 23.9255 21.9056 25 20.5556 25H3.44444C2.09441 25 1 23.9255 1 22.6V5.8C1 4.47452 2.09441 3.4 3.44444 3.4Z"
+                                stroke="#37A033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h3>Próximas atividades</h3>
+                    </div>
+                    <a href="">Calendário </a>
+                </div>
+                <div class="all-notices">
+                    <div class="calendar">
+                        <img src="./img/icon-previous.svg" alt="Anterior" class="arrow-previous">
+                        <div class="weekend-wrapper">
+                            <div class="day-item">
+                                <span>sab</span>
+                                <strong>08</strong>
+                            </div>
+                            <div class="day-item">
+                                <span>dom</span>
+                                <strong>09</strong>
+                            </div>
+                            <div class="day-item selected">
+                                <span>seg</span>
+                                <strong>10</strong>
+                            </div>
+                            <div class="day-item">
+                                <span>ter</span>
+                                <strong>11</strong>
+                            </div>
+                            <div class="day-item">
+                                <span>qua</span>
+                                <strong>12</strong>
+                            </div>
+                        </div>
+                        <img src="./img/icon-next.svg" alt="Próximo" class="arrow-next">
+                    </div>
+                    <div class="wrapper-notice">
+                        <h3>Terça-feira, 11 outubro</h3>
+                        <div class="notice">
+                            <div class="icon-tool"><img src="./img/round-icon-book.svg" alt="ícone de livro"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h4>Entrega atividade POII</h4>
+                                    <span>Atividade avaliativa sobre heran...</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notice">
+                            <div class="icon-tool"><img src="./img/round-icon-book.svg" alt="ícone livro"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h4>Entrega atividade Gestão de Carreira</h4>
+                                    <span>Entrega resumo do capítulo 3 do ... </span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-notice">
+                        <h3>Quarta-feira, 12 outubro</h3>
+                        <div class="notice">
+                            <div class="icon-tool"><img src="./img/round-icon-calendar.svg" alt="ícone de calendário">
+                            </div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h4>Feriado</h4>
+                                    <span>Nossa Senhora Aparecida</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-notice">
+                        <h3>Segunda-feira, 18 outubro</h3>
+                        <div class="notice">
+                            <div class="icon-tool"><img src="./img/round-icon-document.svg" alt="ícone de Documento">
+                            </div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h4>Prova de AEDII</h4>
+                                    <span>Prova prática valendo a N2, grafos...</span>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-notice">
+                        <h3>Sexta-feira, 23 outubro</h3>
+                        <div class="notice">
+                            <div class="icon-tool"><img src="./img/icon-round-box.svg" alt="ícone caixa"></div>
+                            <div class="tool-description">
+                                <div class="area-text">
+                                    <h4>Publicação da lista de alunos aptos a colarem grau</h4>
+                                </div>
+                                <a href="">
+                                    <img src="./img/icon-arrow.svg" alt="ícone seta para direita" class="icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
